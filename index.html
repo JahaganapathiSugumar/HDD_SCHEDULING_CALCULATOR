@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disk Scheduling Algorithms</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 style ="color: #00251a;">Disk Scheduling Visualization</h1>
+       
+        <div id="algorithm-description"></div>
+        
+        <form id="disk-form" onsubmit="simulate(event)">
+            <label for="algorithm">Select an algorithm:</label>
+            <select id="algorithm" onchange="showAlgorithm()">
+                <option value="fcfs">FCFS</option>
+                <option value="sstf">SSTF</option>
+                <option value="scan">SCAN</option>
+                <option value="cscan">C-SCAN</option>
+                <option value="look">LOOK</option>
+                <option value="clook">C-LOOK</option>
+            </select>
+            <label for="requests">Disk Requests (please enter in comma separated):</label>
+            <input type="text" id="requests" placeholder="Example : 98, 183, 41">
+            
+            <label for="head">Initial Head Position:</label>
+            <input type="number" id="head" placeholder="Example : 53" required>
+            
+            <label for="disk-size">Disk Size:</label>
+            <input type="number" placeholder="Example : 200 " id="disk-size" required>
+            
+            <button type="submit">Submit</button>
+            
+            
+        </form>
+
+        <div class = "creators">
+            <br>
+            <div><b>DEVELOPED BY :</b></div><br>
+            <div>JAHAGANAPATHI S (22CSR075)</div><br>
+            <div>KAJOL SUSHMITHA K (22CSR084)</div><br>
+            <div>KAMAL KISHORE V (22CSR086)</div><br>
+            <div><b>KONGU ENGINEERING COLLEGE</b></div><br>
+            <div><b>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</b></div><br>
+        </div>
+    </div>
+</body>
+</html>
