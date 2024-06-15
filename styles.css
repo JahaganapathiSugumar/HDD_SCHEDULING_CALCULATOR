@@ -10,7 +10,7 @@ body {
     background-image: url("hdd.jpeg");
     background-repeat: repeat; 
     background-color: #f0f0f0;
-    background-size:70%;
+    background-size: 70%;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -21,7 +21,6 @@ body {
 .container {
     max-width: 650px;
     background-color: rgba(255, 255, 255, 0.9); 
-
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 60px;
@@ -82,7 +81,7 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.creators{
+.creators {
     text-decoration: solid;
     text-align: center; 
     background-color: aquamarine; 

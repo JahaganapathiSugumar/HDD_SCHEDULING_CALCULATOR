@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 style ="color: #00251a;">Disk Scheduling Visualization</h1>
+        <h1 style="color: #00251a;">Disk Scheduling Visualization</h1>
        
         <div id="algorithm-description"></div>
         
@@ -24,22 +24,28 @@
                 <option value="clook">C-LOOK</option>
             </select>
             <label for="requests">Disk Requests (please enter in comma separated):</label>
-            <input type="text" id="requests" placeholder="Example : 98, 183, 41">
+            <input type="text" id="requests" placeholder="Example: 98, 183, 41">
             
             <label for="head">Initial Head Position:</label>
-            <input type="number" id="head" placeholder="Example : 53" required>
+            <input type="number" id="head" placeholder="Example: 53" required>
             
             <label for="disk-size">Disk Size:</label>
-            <input type="number" placeholder="Example : 200 " id="disk-size" required>
+            <input type="number" placeholder="Example: 200" id="disk-size" required>
+            
+            <div id="direction-container" style="display:none;">
+                <label for="direction">Direction:</label>
+                <select id="direction">
+                    <option value="forward">Forward</option>
+                    <option value="backward">Backward</option>
+                </select>
+            </div>
             
             <button type="submit">Submit</button>
-            
-            
         </form>
 
-        <div class = "creators">
+        <div class="creators">
             <br>
-            <div><b>DEVELOPED BY :</b></div><br>
+            <div><b>DEVELOPED BY:</b></div><br>
             <div>JAHAGANAPATHI S (22CSR075)</div><br>
             <div>KAJOL SUSHMITHA K (22CSR084)</div><br>
             <div>KAMAL KISHORE V (22CSR086)</div><br>

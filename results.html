@@ -5,27 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disk Scheduling Simulation Results</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="results.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1 style ="color: #00251a;">Results</h1>
-        <div id="simulation-result">
-            <div id="result-details"></div>
-            <div id="movements"></div>
-        </div>
+        <h2>Simulation Result</h2>
+        <p id="algorithmUsed"></p>
+        <canvas id="diskChart"></canvas>
+        <p id="totalMovement"></p>
+        <button onclick="goBack()">Back</button>
     </div>
 
-    <script>
-  
-        const result = sessionStorage.getItem('result');
-        const movements = JSON.parse(sessionStorage.getItem('movements'));
-
-       
-        const resultDetails = document.getElementById('result-details');
-        resultDetails.innerHTML = `Total head movement: ${result} cylinders<br><br>`;
-
-        const movementsList = document.getElementById('movements');
-        movementsList.innerHTML = `Movements: ${movements.join(' -> ')}`;
-    </script>
+    
 </body>
 </html>
