@@ -39,3 +39,5 @@ The LOOK algorithm is similar to SCAN but reverses direction at the last request
 
 Circular LOOK (C-LOOK)
 The C-LOOK algorithm is similar to C-SCAN but returns to the first request rather than the disk end after servicing all requests in one direction.
+
+website : https://hdd-scheduling-calculator.netlify.app/
